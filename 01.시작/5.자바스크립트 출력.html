@@ -1,0 +1,41 @@
+<!--
+1. window.alert() 메소드: 별도의 대화 상자를 팝업
+2. HTML DOM 요소를 이용한 innerHTML 프로퍼티: document 객체의 getElementByID()나 getElementsByTagName() 등의 메소드를 사용하여 HTML 요소를 선택 후 innerHTML 프로퍼티 사용
+3. document.write() 메소드: 테스트나 디버깅을 위해 사용
+4. console.log() 메소드: 웹 브라우저의 콘솔을 통해 데이터를 출력
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Output</title>
+    </head>
+<body>
+<h1>Window 객체의 alert() 메소드</h1>
+<button onclick="alertDialogBox()">alert 대화 상자</button>
+<script>
+    function alertDialogBox(){
+        alert("확인을 누를 때 까지 다른 작업을 할 수 없어요!");
+    }
+</script>
+<hr>
+<h1>HTML DOM 요소를 이용한 innerHTML 프로퍼티</h1>
+<p id="text">안녕하세요.</p>
+<script>
+    var str = document.getElementById("text");
+    str.innerHTML="다른 문장으로 바꿔치기";
+</script>
+<hr>
+<h1>Document 객체의 write() 메소드</h1>
+<script>
+    document.write(4*5);
+</script>
+<br>
+<button onclick="document.write(4*5)">버튼을 눌러보세요!</button>
+<hr>
+<h1>console.log() 메소드</h1>
+<p>F12를 눌러서 콘솔 화면을 열면 결과를 확인할 수 있습니다.</p>
+<script>
+    console.log(4*5);
+</script>
+</body>
+</html>
