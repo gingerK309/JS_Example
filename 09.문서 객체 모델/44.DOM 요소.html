@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript DOM Element</title>
+        
+    </head>
+<body>
+<h1>HTML 태그 이름을 이용한 선택</h1>
+<ul>
+    <li>첫 번째 아이템이에요!</li>
+    <li>두 번째 아이템이에요!</li>
+    <li>세 번째 아이템이에요!</li>
+    <li>네 번째 아이템이에요!</li>
+    <li>다섯 번째 아이템이에요!</li>
+</ul>
+<hr>
+<h1>아이디를 이용한 선택</h1>
+<ul>
+    <li>첫 번째 아이템이에요!</li>
+    <li id="even">두 번째 아이템이에요!</li>
+    <li>세 번째 아이템이에요!</li>
+    <li id="even">네 번째 아이템이에요!</li>
+    <li>다섯 번째 아이템이에요!</li>
+</ul>
+<hr>
+<h1>클래스를 이용한 선택</h1>
+<ul>
+    <li class="odd">첫 번째 아이템이에요!</li>
+    <li>두 번째 아이템이에요!</li>
+    <li class="odd">세 번째 아이템이에요!</li>
+    <li>네 번째 아이템이에요!</li>
+    <li class="odd">다섯 번째 아이템이에요!</li>
+</ul>
+<hr>
+<h1>name 속성을 이용한 선택</h1>
+<p name="first">첫 번째 단락이에요!</p>
+<ul>
+    <li name="first">첫 번째 아이템이에요!</li>
+    <li>두 번째 아이템이에요!</li>
+    <li>세 번째 아이템이에요!</li>
+    <li>네 번째 아이템이에요!</li>
+    <li>다섯 번째 아이템이에요!</li>
+</ul>
+<hr>
+<h1>CSS 선택자를 이용한 선택</h1>
+<p class="Css">첫 번째 단락이에요!</p>
+<ul>
+    <li class="Css">첫 번째 아이템이에요!</li>
+    <li>두 번째 아이템이에요!</li>
+    <li class="Css">세 번째 아이템이에요!</li>
+    <li>네 번째 아이템이에요!</li>
+    <li class="Css">다섯 번째 아이템이에요!</li>
+</ul>
+<hr>
+<h1>HTML 객체 집합을 이용한 선택</h1>
+<p id="title"></p>
+<hr>
+<h1>innerHTML을 이용한 요소의 내용 변경</h1>
+<p id="text">이 문장을 바꿉니다.</p>
+<hr>
+<h1>DOM 요소의 스타일 변경</h1>
+<p id="txt">버튼을 눌러보세요~</p>
+<button onclick="changeColorLight()">light</button>
+<button onclick="changeColorDark()">dark</button>
+<script src="dom.js"></script>
+</body>
+</html>
