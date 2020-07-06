@@ -12,8 +12,13 @@
 -createAttribute(): 새로운 "속성" 노드를 생성
 -createTextNode(): 새로운 "텍스트" 노드를 생성
  
+3.노드의 제거
+-removeChild(): 특정 자식 노드 제거, 제거되는 노드의 모든 자식 노드들도 다 같이 제거
+-removeAttribute(): 속성 이름을 이용하여 특정 속성 노드 제거
  
- 
+4.노드의 복제
+-cloneNode(): 특정 노드를 복제
+    복제할노드.cloneNode(자식노드복제여부);
  */
 function appendNode(){
     var parent = document.getElementById('list');
@@ -53,4 +58,21 @@ function createNode3(){
     var elementNode=document.getElementById('txt');
     var newText= document.createTextNode("새 텍스트 "); // 새로운 텍스트 노드 생성
     elementNode.appendChild(newText);//해당 요소의 자식 노드로 추가
+}
+
+function remove(){
+    var parent= document.getElementById('rm');
+    var removedItem=document.getElementById('select');
+    parent.removeChild(removedItem);
+}
+
+function remove2(){
+    var text= document.getElementById('back');
+    text.removeAttribute("style");
+}
+
+function cloneElement(){
+    var parent=document.getElementById('ramen');
+    var originItem=document.getElementById('copy');
+    parent.appendChild(originItem.cloneNode(true));//해당 노드를 복제하여 리스트의 마지막에 추가
 }
